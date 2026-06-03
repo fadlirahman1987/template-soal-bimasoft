@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite/
+
+# Electron Build
+dist-desktop/
+
+# Environment
+.env
+.env.local
