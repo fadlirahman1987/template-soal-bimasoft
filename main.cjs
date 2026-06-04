@@ -14,7 +14,7 @@ function createWindow() {
       contextIsolation: true,
     },
     autoHideMenuBar: true,
-    title: "Generator Template Soal Bimasoft v.1.3.0",
+    title: "Generator Template Soal Bimasoft v.1.4.0",
     // Standard application icon can be set if needed
   });
 

@@ -733,7 +733,7 @@ export default function App() {
           }}>📝</div>
           <div>
             <div style={{ fontSize: "16px", fontWeight: "700", color: "#fff", letterSpacing: "0.5px" }}>
-              Generator Template Soal Bimasoft v.1.3.0
+              Generator Template Soal Bimasoft v.1.4.0
             </div>
             <div style={{ fontSize: "11px", color: "#94a3b8" }}>Sistem Pengolah Ujian & Ekspor Docx/Excel</div>
           </div>
@@ -1539,6 +1539,16 @@ export default function App() {
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "11px", color: "#94a3b8" }}>
                   <div>
+                    <strong style={{ color: "#cbd5e1" }}>v1.4.0 (Juni 2026)</strong>
+                    <ul style={{ paddingLeft: "16px", marginTop: "2px" }}>
+                      <li>Pembungkusan aplikasi desktop (.exe) mandiri menggunakan Electron.</li>
+                      <li>Integrasi pembaruan otomatis (Auto-Updater) via GitHub Releases.</li>
+                      <li>Pengiriman soal ujian secara langsung ke website CBT Bimasoft (WordPress XML-RPC).</li>
+                      <li>Penyimpanan aman kredensial username dan password di memori lokal (Local Storage) sekali pengisian.</li>
+                      <li>Pemuatan hybrid online-offline otomatis untuk mendukung update instan tanpa unduhan besar.</li>
+                    </ul>
+                  </div>
+                  <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "6px" }}>
                     <strong style={{ color: "#cbd5e1" }}>v1.3.0 (Juni 2026)</strong>
                     <ul style={{ paddingLeft: "16px", marginTop: "2px" }}>
                       <li>Desain ulang antarmuka menjadi SaaS Dashboard modern (Glassmorphism).</li>
