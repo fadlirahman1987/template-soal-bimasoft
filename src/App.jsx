@@ -142,6 +142,20 @@ async function generateDocm(templateBase64, title, questions) {
   // Replace tabel
   docXml = docXml.replace(/<w:tbl>[\s\S]*?<\/w:tbl>/, tableXml);
 
+  // Update Custom XML databinding value untuk PostTitle jika ada
+  const customXmlFiles = Object.keys(zip.files).filter(f => f.startsWith('customXml/') && f.endsWith('.xml') && !f.includes('itemProps'));
+  for (const xmlFile of customXmlFiles) {
+    let xmlContent = await zip.file(xmlFile).async("string");
+    if (xmlContent.includes("<BlogPostInfo") || xmlContent.includes("<PostTitle")) {
+      if (xmlContent.includes("<PostTitle/>")) {
+        xmlContent = xmlContent.replace("<PostTitle/>", `<PostTitle>${escXml(title)}</PostTitle>`);
+      } else {
+        xmlContent = xmlContent.replace(/<PostTitle>[\s\S]*?<\/PostTitle>/, `<PostTitle>${escXml(title)}</PostTitle>`);
+      }
+      zip.file(xmlFile, xmlContent);
+    }
+  }
+
   // Tambahkan gambar ke dalam zip
   for (const rel of imageRels) {
     const q = questions[rel.qIndex];
