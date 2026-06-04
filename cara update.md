@@ -27,8 +27,8 @@ Perintah ini akan secara otomatis mengompilasi ulang kode web Anda dan menghasil
 
 ## Langkah 3: Unggah Pembaruan ke GitHub Releases
 1. Buka repositori GitHub Anda di browser:
-   `https://github.com/fadlirahman87/template-soal-bimasoft`
-2. Di sebelah kanan halaman repositori, klik **"Releases"** (atau buka langsung `https://github.com/fadlirahman87/template-soal-bimasoft/releases`).
+   `https://github.com/fadlirahman1987/template-soal-bimasoft`
+2. Di sebelah kanan halaman repositori, klik **"Releases"** (atau buka langsung `https://github.com/fadlirahman1987/template-soal-bimasoft/releases`).
 3. Klik tombol **"Draft a new release"** (atau **"Create a new release"**).
 4. Pada tombol **"Choose a tag"**, ketik versi rilis baru Anda dengan awalan huruf `v` (contoh: **`v1.1.0`**), lalu klik *Create new tag*.
 5. Isi kolom **"Release title"** dengan nama pembaruan Anda (contoh: `Rilis Pembaruan v1.1.0`).
