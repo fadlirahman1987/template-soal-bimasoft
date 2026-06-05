@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import JSZip from "jszip";
 import * as XLSX from "xlsx";
+import { DEFAULT_TEMPLATE_BASE64 } from "./defaultTemplate";
 
 const INITIAL_QUESTION = () => ({
   id: Date.now() + Math.random(),
@@ -210,8 +211,8 @@ export default function App() {
   });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
-  const [templateFile, setTemplateFile] = useState(null);
-  const [templateBase64, setTemplateBase64] = useState(null);
+  const [templateFile, setTemplateFile] = useState("Template_Bawaan_Bimasoft.docm");
+  const [templateBase64, setTemplateBase64] = useState(DEFAULT_TEMPLATE_BASE64);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [showAboutModal, setShowAboutModal] = useState(false);
   const fileInputRef = useRef();
